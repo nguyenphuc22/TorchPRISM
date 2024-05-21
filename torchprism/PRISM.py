@@ -158,7 +158,3 @@ class PRISM:
             _excitations = []
 
             return rgb_features_map
-
-    def reset_excitations(self):
-        PRISM._is_orig_image = True
-        PRISM._excitations = []
