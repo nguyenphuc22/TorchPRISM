@@ -109,7 +109,7 @@ def plot_example(input,
         ext = os.path.splitext(save_path)[1].strip(".")
         plt.savefig(save_path, format=ext, dpi=300, bbox_inches="tight")
 
-with open("classes.json") as json_file:
+with open("/content/TorchPRISM/classes.json") as json_file:
     CLASSES = json.load(json_file)
 
 CLASSES_IDs = { int(k): v.split(",")[0].replace(" ", "_") for k,v in CLASSES.items() }
