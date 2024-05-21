@@ -154,10 +154,11 @@ class PRISM:
             rgb_features_map = PRISM._normalize_to_rgb(rgb_features_map)
 
             # prune old PRISM._excitations
-            PRISM.reset_excitations()
+            _is_orig_image = True
+            _excitations = []
 
             return rgb_features_map
 
-    def reset_excitations():
+    def reset_excitations(self):
         PRISM._is_orig_image = True
         PRISM._excitations = []
