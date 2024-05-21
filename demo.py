@@ -55,7 +55,7 @@ def normalize_image(image):
 
 if __name__ == "__main__":
     arches = [
-        # "vgg16",
+        "vgg16",
         # "vgg11",
         # "vgg16",
         # "vgg19",
